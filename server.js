@@ -27,6 +27,7 @@ const port = process.env.PORT;
      useCreateIndex:true,
      useFindModify:false,
      useUnifiedTopology:true
+     
  })
  .then(()=>console.log("Mongodb connected..."))
  .catch(err=>console.log(err));

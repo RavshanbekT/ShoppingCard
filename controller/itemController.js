@@ -21,7 +21,7 @@ exports.createItem = async(req,res)=>{
     const newItem = await Item.create({
         name:req.body.name
     });
- 
+
    try {
      res.status(200).json({
          status:"success",
@@ -37,7 +37,7 @@ exports.createItem = async(req,res)=>{
 
  exports.deleteItem = async(req,res)=>{
  const newItem  = await Item.findById(req.params.id);
- 
+
  newItem.remove();
 
  try {
